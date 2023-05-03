@@ -181,6 +181,7 @@ export async function requestChatStream(
     };
 
     if (res.ok) {
+      console.log(res);
       const reader = res.body?.getReader();
       const decoder = new TextDecoder();
 
